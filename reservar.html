@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLUCOSCAN - Reservar cita</title>
+</head>
+<body>
+
+<header>
+  <img src="assets/img/logo-glucoscan.png" alt="Logo GLUCOSCAN" width="120">
+  <h1>GLUCOSCAN</h1>
+  <nav>
+    <a href="index.html">Inicio</a> |
+    <a href="conocenos.html">Conócenos</a> |
+    <a href="diabetes.html">La diabetes</a> |
+    <a href="reservar.html">Reservar cita</a> |
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Reservar cita presencial</h2>
+    <p>Completa el siguiente formulario para solicitar tu cita en tu hospital EsSalud asignado.</p>
+
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Datos del paciente</legend>
+
+        <label for="tipoDoc">Tipo de documento</label><br>
+        <select id="tipoDoc" name="tipoDoc">
+          <option value="DNI">DNI</option>
+          <option value="CE">Carné de Extranjería</option>
+          <option value="PASAPORTE">Pasaporte</option>
+        </select><br><br>
+
+        <label for="numeroDoc">Número de documento</label><br>
+        <input type="text" id="numeroDoc" name="numeroDoc" placeholder="Escribe tu número de documento" required><br><br>
+
+        <label for="nombres">Nombres y apellidos</label><br>
+        <input type="text" id="nombres" name="nombres" placeholder="Escribe tu nombre completo" required><br><br>
+
+        <label for="fechaNacimiento">Fecha de nacimiento</label><br>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Motivo de la cita</legend>
+
+        <p>¿Cuál describe mejor tu situación?</p>
+        <input type="radio" id="prevencion" name="motivo" value="Prevencion">
+        <label for="prevencion">Quiero prevenir (tengo antecedentes o síntomas)</label><br>
+
+        <input type="radio" id="diagnosticado" name="motivo" value="Diagnosticado">
+        <label for="diagnosticado">Ya estoy diagnosticado y necesito seguimiento</label><br><br>
+
+        <label for="especialidad">Especialidad</label><br>
+        <select id="especialidad" name="especialidad">
+          <option value="Endocrinologia">Endocrinología</option>
+          <option value="MedicinaGeneral">Medicina General</option>
+          <option value="Nutricion">Nutrición</option>
+          <option value="Oftalmologia">Oftalmología</option>
+        </select><br><br>
+
+        <label for="comentario">Cuéntanos brevemente tu caso</label><br>
+        <textarea id="comentario" name="comentario" rows="5" cols="40" placeholder="Escribe aquí..."></textarea><br><br>
+
+        <input type="checkbox" id="aceptaPolitica" name="aceptaPolitica" required>
+        <label for="aceptaPolitica">Acepto la Política de Privacidad</label><br><br>
+      </fieldset>
+
+      <input type="reset" value="Limpiar formulario">
+      <input type="submit" value="Solicitar cita">
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>GLUCOSCAN &mdash; Sistema de citas médicas para prevención y atención integral de la diabetes.</p>
+</footer>
+
+</body>
+</html>
